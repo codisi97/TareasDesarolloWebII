@@ -1,11 +1,17 @@
 import Image from "next/image";
+import Conversor from "./componentes/conversor";
+import Celsius from "./componentes/Celsius";
+import Fahrenheit from "./componentes/Fahrenheit";
+import Kelvin from "./componentes/Kelvin";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <h1>Trabajando con componentes en next.js</h1>
-      </main>
+     <div>
+      <h1>Conversor de temperatura</h1>
+
+      <Celsius valor={15} />
+      <Fahrenheit valor={24} />
+      <Kelvin valor={18} />
     </div>
   );
 }
