@@ -10,8 +10,8 @@ export default function Home() {
       <h1>Conversor de temperatura</h1>
 
       <Celsius valor={15} />
-      <Fahrenheit valor={24} />
-      <Kelvin valor={18} />
+      <Fahrenheit valor={15} />
+      <Kelvin valor={15} />
     </div>
   );
 }
