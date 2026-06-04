@@ -3,8 +3,9 @@ const cors = require('cors');
 const sequelize = require('./conexion/db');
 const ProductoModel = require('./modelo/Producto');
 
-const app = express();
 
+const app = express();
+app.use(cors());
 app.use(express.json());
 
 //Consulta numero 11 / contar productos disponibles en base al estado
